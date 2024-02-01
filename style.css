@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&family=Tilt+Prism&display=swap');
+  
+  h1 {
+  font-family: 'Brush Script MT', cursive;
+  color:;
+  background: rgba(0, 255, 0, 0.3);
+}
+h5{
+  color:snow;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-image: url('https://as2.ftcdn.net/v2/jpg/03/04/23/95/1000_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
+  
+  
+  font-family: 'Courier New', Courier, monospace;
+
+  
+}
+
+img {
+  height: 350px;
+  width:  350px;
+}
+ 
+img:hover {
+  transform: scale(1.1);
+}
