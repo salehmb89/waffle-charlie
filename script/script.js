@@ -1,25 +1,36 @@
 $(document).ready(function () {
-  console.log("Top: " + $("#dogePic").position().top + " Left: " + $("#dogePic").position().left);
+  console.log(
+    "Top: " + $("img").position().top + " Left: " + $("img").position().left
+  );
 
-  $("#dogePic").draggable({
-    stop: function () {
-      console.log("Stopping???");
+  
+  $("#dogePic").draggable(
+    {
+      stop: function () {
+      console.log("stopping???");
 
-      // Check if the image is on the far-right side
-      let dogeLeft = $("#dogePic").position().left;
+      // if( img is far right side  then ) user wins.
+
+      let dogeLeft = $("img").position().left;
 
       if (dogeLeft > 300) {
-        console.log("We are above 300", dogeLeft);
+        console.log("we above 300", dogeLeft);
 
-        $("p").text("You won. Good for you.");
+        $("p").text("you won. good for you.");
 
-        // Change image source on winning
-        $("#dogePic").attr("src", "https://picsum.photos/200/300");
+        $("img").attr("src", "https://picsum.photos/200/300");
+        // $("#my_image").attr("src","second.jpg");
       } else {
-        console.log("We are NOT above 300");
+        console.log("we NOT above 500");
       }
     },
-    containment: "#containment-wrapper",
-    scroll: false
-  });
+      containment: "#containment-wrapper",
+      scroll: false
+    }
+  );
+
+
+
+
+  //TODO: if position is on the far rihgt side, tell user they won
 });
