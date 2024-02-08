@@ -3,7 +3,10 @@ $(document).ready(function () {
     "Top: " + $("img").position().top + " Left: " + $("img").position().left
   );
 
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes
 
   
   $("#dogePic").draggable(
